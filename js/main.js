@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             </button>
                         </div>
                     `;
-                    group.insertAdjacentHTML('afterbegin', cartToggleHTML);
+                    group.insertAdjacentHTML('beforeend', cartToggleHTML);
                 }
             } else {
                 // Fallback caso a página não tenha barra de busca
@@ -472,6 +472,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Toggle (abrir/fechar)
     const toggleBtn = document.getElementById('cart-toggle-btn');
     const closeBtn = document.getElementById('cart-close-btn');
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+    
+    if (mobileMenuBtn && mainNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('is-open');
+        });
+    }
     const overlay = document.getElementById('cart-overlay');
 
     if (toggleBtn) {
@@ -608,15 +618,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (e.target === modalOverlay) {
                 hideSuccessModal();
             }
-        });
-    }
-
-    /* 9. Menu Hambúrguer (Mobile) */
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mainNav = document.getElementById('main-nav');
-    if (mobileBtn && mainNav) {
-        mobileBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('is-open');
         });
     }
 });
