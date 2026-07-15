@@ -16,6 +16,18 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
   6. Enviado o projeto local para o GitHub (`git push -u origin main`).
   7. Instruído o usuário a adicionar seu amigo como colaborador no GitHub.
 
+### [2026-07-14] Implementação da Funcionalidade de Carrinho de Compras
+- **Objetivo:** Criar um carrinho de compras interativo que funcione em todas as páginas, salvando dados localmente para auxiliar na solicitação de orçamentos.
+- **Arquivos Alterados:**
+  - [produtos.html](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/produtos.html) - Adicionados atributos de dados, preços fictícios realistas e botões de adicionar.
+  - [linha-acessorio-panificacao.html](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/linha-acessorio-panificacao.html) - Adicionados atributos de dados nos 27 acessórios, preços e layout com botão de orçamento e carrinho lado a lado.
+  - [css/index.css](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/css/index.css) - Estilização completa do carrinho, incluindo badge de notificação com efeito bounce, gaveta lateral responsiva com backdrop-blur, itens da lista, seletores de quantidade e modal de finalização de pedido.
+  - [js/main.js](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/js/main.js) - Lógica de estado do carrinho carregando do `localStorage`, injeção de DOM dinâmica do carrinho, manipulação de quantidades (+ / -), esvaziamento e modal popup simulado de sucesso.
+- **Decisões Técnicas:**
+  - **Injeção Dinâmica via JS:** Decidimos injetar o ícone do carrinho e a gaveta lateral dinamicamente em todas as páginas por JavaScript para garantir escalabilidade caso novas páginas sejam adicionadas no futuro, evitando redundância de código nos arquivos HTML.
+  - **Servidor Interno Python:** Iniciamos um servidor interno em Python na porta 8080 para rodar a aplicação localmente e permitir testes eficientes com persistência de dados.
+
+
 ## Próximos Passos (Pendências)
 1. **Adicionar Colaborador:** O usuário deve adicionar o amigo como colaborador no repositório do GitHub (instruído na mensagem anterior).
 2. **Aceitar Convite:** O amigo do usuário deve aceitar o convite para colaborar.
