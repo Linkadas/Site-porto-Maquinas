@@ -1,0 +1,175 @@
+Quero que você faça uma reformulação completa do design do meu site, deixando-o extremamente moderno, elegante e profissional, semelhante ao padrão visual de grandes empresas como Mercado Livre, Magalu, Apple e Shopify.
+
+O objetivo é transmitir confiança, tecnologia e qualidade, sem perder a identidade visual da Porto Máquinas.
+
+## Cabeçalho (Header)
+
+- Redesenhe completamente o cabeçalho.
+- Deixe-o mais limpo e sofisticado.
+- Utilize bastante espaço em branco.
+- Alinhe perfeitamente todos os elementos.
+- Diminua a altura do header para ficar mais elegante.
+- Deixe o logo mais destacado.
+- Caso necessário, aumente levemente o tamanho do logo.
+- Utilize um fundo em degradê discreto utilizando as cores da marca.
+
+## Menu
+
+Quero um menu moderno.
+
+- Botões com cantos arredondados.
+- Bordas discretas.
+- Hover elegante.
+- Pequena animação ao passar o mouse.
+- Página atual destacada.
+- Melhor distribuição entre os botões.
+- Não deixar os botões tão "quadrados".
+
+## Barra de Pesquisa
+
+Transforme a pesquisa em um campo premium.
+
+- Cantos totalmente arredondados.
+- Ícone integrado.
+- Placeholder elegante.
+- Borda fina.
+- Sombra leve.
+- Efeito ao clicar.
+- Melhor alinhamento dentro do header.
+
+## Botão Carrinho
+
+Quero um carrinho muito mais moderno.
+
+- Ícone maior.
+- Badge vermelho pequeno e elegante.
+- Hover suave.
+- Pequena animação.
+- Borda discreta.
+- Aparência premium.
+
+## Tipografia
+
+Troque toda a tipografia para uma fonte moderna.
+
+Utilize:
+
+- Inter
+ou
+- Poppins
+
+Utilize pesos diferentes para criar hierarquia visual.
+
+## Cores
+
+Manter a identidade da Porto Máquinas.
+
+Utilizar principalmente:
+
+• Vermelho escuro
+• Branco
+• Cinza claro
+• Preto
+
+Evite cores muito fortes.
+
+Utilize degradês discretos.
+
+## Cards de Produtos
+
+Quero os cards muito mais bonitos.
+
+Cada card deve possuir:
+
+- cantos arredondados
+- sombra suave
+- animação ao passar o mouse
+- botão destacado
+- imagem centralizada
+- informações organizadas
+- espaçamento adequado
+
+O card deve parecer um e-commerce profissional.
+
+## Botões
+
+Padronize todos os botões.
+
+Todos devem possuir:
+
+- border-radius moderno
+- hover elegante
+- animação de escala
+- transição suave
+- sombra discreta
+
+## Espaçamento
+
+Melhore todo o espaçamento do site.
+
+- Padding maior.
+- Margens proporcionais.
+- Layout respirando.
+- Nada apertado.
+
+## Responsividade
+
+Garanta funcionamento perfeito em:
+
+- Desktop
+- Notebook
+- Tablet
+- Celular
+
+Sem quebrar nenhum layout.
+
+## Animações
+
+Adicionar animações suaves em:
+
+- Botões
+- Cards
+- Menu
+- Pesquisa
+- Carrinho
+- Banners
+
+Nada exagerado.
+
+Apenas uma sensação premium.
+
+## Performance
+
+Otimize o CSS.
+
+Remova estilos repetidos.
+
+Padronize cores.
+
+Padronize fontes.
+
+Padronize sombras.
+
+Padronize espaçamentos.
+
+## Importante
+
+NÃO altere nenhuma funcionalidade existente.
+
+NÃO remova nenhuma função.
+
+NÃO altere JavaScript.
+
+NÃO altere o sistema do carrinho.
+
+NÃO altere o sistema de orçamento.
+
+NÃO altere o envio para WhatsApp.
+
+NÃO altere os produtos cadastrados.
+
+NÃO altere a lógica do site.
+
+Faça apenas melhorias no design (HTML e CSS), mantendo 100% das funcionalidades atuais.
+
+O resultado deve parecer um site desenvolvido por uma agência profissional, com aparência premium, moderna, limpa, organizada e altamente confiável.
