@@ -68,6 +68,14 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
 - **Decisões Técnicas:**
   - **Manutenção de Atributos internos**: Preservação dos atributos `data-price` e dados estruturais internos para evitar quebras no código ou em futuras integrações comerciais, removendo apenas a exibição visual (UI).
 
+### [2026-07-14] Atualização do WhatsApp do Orçamento e Checkout do Carrinho
+- **Objetivo:** Alterar o número de WhatsApp de destino das solicitações para o telefone real do usuário: (11) 94039-5154, e integrar a finalização do carrinho lateral.
+- **Arquivos Alterados:**
+  - [js/main.js](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/js/main.js) - Atualizado o telefone do botão flutuante para "5511940395154"; alterado o comportamento do checkout do carrinho para gerar o texto listado com produtos e quantidades e abrir a conversa no WhatsApp correspondente.
+  - [orcamento.html](file:///c:/Users/linco/OneDrive/Área de Trabalho/SITE PORTO MAQUINAS/SITE PORTO MAQUINAS/orcamento.html) - Atualizado o telefone de São Paulo nas informações laterais e no seletor de destino do formulário de orçamento.
+- **Decisões Técnicas:**
+  - **Integração Real do Checkout:** O botão "Finalizar Pedido" do carrinho agora deixa de ser uma mera simulação visual e passa a fazer o envio dinâmico do orçamento dos itens direto para o WhatsApp do vendedor com a listagem dos produtos selecionados.
+
 ## Próximos Passos (Pendências)
 1. Aguardar novas solicitações do usuário para iniciar as implementações ou melhorias no site.
 2. Garantir o uso de branches organizadas para novas funcionalidades caso necessário.
