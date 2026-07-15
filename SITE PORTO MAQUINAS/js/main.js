@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(lightbox);
 
         productImages.forEach(img => {
-            img.style.cursor = 'zoom-in';
+            img.style.cursor = 'pointer';
             img.addEventListener('click', (e) => {
                 e.preventDefault();
                 lightboxImg.src = img.src;

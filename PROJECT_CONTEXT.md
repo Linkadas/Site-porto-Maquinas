@@ -43,6 +43,7 @@ Este arquivo registra o andamento das tarefas, decisões técnicas e pendências
   - **Chave do contactForm:** Descobrimos que o bloco `if (contactForm)` original não era fechado após o submit, envelopando todo o código subsequente. Como o formulário não existe em produtos/acessórios, o JavaScript avaliava `contactForm` como `null` e pulava toda a execução do carrinho. Adicionamos a chave de fechamento `}` na linha 76.
   - **Uso do .closest():** Substituímos o event selector direto `.classList.contains` por `.closest('.add-to-cart-btn')` para garantir que o clique nas bordas dos botões ou no emoji `🛒` disparem a adição corretamente.
   - **Reposicionamento no Header:** Injetamos o botão no `.header-main` (ao lado da barra de pesquisa) para evitar que ele fique escondido no menu `<nav>` que possui scroll horizontal em dispositivos móveis, melhorando consideravelmente a usabilidade (UX).
+  - **Cursor de Lupa:** Alteramos o estilo do cursor ao passar sobre as imagens no catálogo (Lightbox) de `zoom-in` para `pointer` (mãozinha), que é o comportamento mais convencional e menos confuso para o usuário.
 
 
 
