@@ -109,6 +109,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create lightbox overlay
         const lightbox = document.createElement('div');
         lightbox.className = 'lightbox-overlay';
+        
+        // Estilos de segurança contra cache de CSS
+        lightbox.style.position = 'fixed';
+        lightbox.style.top = '0';
+        lightbox.style.left = '0';
+        lightbox.style.width = '100%';
+        lightbox.style.height = '100vh';
+        lightbox.style.visibility = 'hidden';
+        lightbox.style.pointerEvents = 'none';
+        
         const lightboxImg = document.createElement('img');
         lightbox.appendChild(lightboxImg);
         document.body.appendChild(lightbox);
@@ -118,11 +128,15 @@ document.addEventListener("DOMContentLoaded", () => {
             img.addEventListener('click', (e) => {
                 e.preventDefault();
                 lightboxImg.src = img.src;
+                lightbox.style.visibility = 'visible';
+                lightbox.style.pointerEvents = 'auto';
                 lightbox.classList.add('show');
             });
         });
 
         lightbox.addEventListener('click', () => {
+            lightbox.style.visibility = 'hidden';
+            lightbox.style.pointerEvents = 'none';
             lightbox.classList.remove('show');
         });
     }
