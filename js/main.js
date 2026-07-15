@@ -610,4 +610,13 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    /* 9. Menu Hambúrguer (Mobile) */
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+    if (mobileBtn && mainNav) {
+        mobileBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('is-open');
+        });
+    }
 });

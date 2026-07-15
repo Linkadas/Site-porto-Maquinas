@@ -11,18 +11,11 @@
 </head>
 <body class="antialiased">
     <header class="topbar">
-        <div class="container header-inner">
-            <div class="header-main">
-                <a href="index.html" class="brand" aria-label="Voltar para o início">
+                <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Voltar para o início">
                     <img src="./assets/porto-maquinas-logo.webp" alt="Porto Máquinas"/>
                 </a>
-                <form class="site-search">
-                    <label for="site-search-input" style="display:none;">Buscar produto</label>
-                    <input id="site-search-input" placeholder="Buscar produto" value=""/>
-                    <button type="submit" aria-label="Buscar produto"><span aria-hidden="true"></span></button>
-                </form>
-            </div>
-            <nav aria-label="Navegação principal">
+            <nav id="main-nav" aria-label="Navegação principal">
                 <a href="index.html" class="nav-btn">Home</a>
                 <a href="sobre.html" class="nav-btn is-active">Sobre</a>
                 <a href="produtos.html" class="nav-btn">Produtos</a>
@@ -30,6 +23,20 @@
                 <a href="servicos.html" class="nav-btn">Serviços</a>
                 <a href="orcamento.html" class="nav-btn">Orçamento</a>
             </nav>
+            <div class="header-main">
+                <form class="site-search">
+                    <label for="site-search-input" style="display:none;">Buscar produto</label>
+                    <input id="site-search-input" placeholder="Buscar produto" value=""/>
+                    <button type="submit" aria-label="Buscar produto"><span aria-hidden="true"></span></button>
+                </form>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menu">
+                    <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main>

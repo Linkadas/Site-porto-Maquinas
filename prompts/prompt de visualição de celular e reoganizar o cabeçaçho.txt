@@ -1,0 +1,116 @@
+Quero ajustar somente o cabeçalho do meu site, mantendo o visual moderno e profissional que já foi criado.
+
+Faça as seguintes alterações:
+
+1. Posicionamento da logo
+
+- Mova a logo para o lado esquerdo do cabeçalho.
+- Aumente o tamanho da logo para que fique mais visível.
+- Garanta que a imagem não fique borrada, esticada ou cortada.
+- Mantenha uma boa margem entre a logo e os outros elementos.
+- No computador, a logo deve ficar em destaque, mas sem deixar o cabeçalho muito alto.
+- No celular, a logo deve continuar visível e ter um tamanho proporcional à tela.
+
+2. Carrinho e barra de pesquisa
+
+- Mova a barra de pesquisa e o botão do carrinho para o lado direito do cabeçalho.
+- A barra de pesquisa deve aparecer antes do carrinho.
+- O carrinho deve ficar no canto direito.
+- Mantenha o contador de produtos bem visível.
+- Organize os elementos nesta ordem no computador:
+
+Logo → Menu de navegação → Barra de pesquisa → Carrinho
+
+- Deixe todos os elementos centralizados verticalmente.
+- Não deixe nenhum item apertado ou sobreposto.
+
+3. Visualização no computador
+
+Crie uma versão específica para telas maiores:
+
+- Logo grande e visível no lado esquerdo.
+- Menu completo visível.
+- Barra de pesquisa no lado direito.
+- Carrinho no canto direito.
+- Todos os elementos devem aparecer em uma única linha quando houver espaço.
+- Utilize um limite máximo de largura para que o conteúdo não fique espalhado em monitores grandes.
+- Mantenha bons espaçamentos entre todos os elementos.
+
+4. Visualização no celular
+
+Crie uma versão específica e bem organizada para celular.
+
+No celular:
+
+- A logo deve ficar visível na parte superior.
+- Adicione um botão de menu hambúrguer.
+- O menu de navegação deve abrir e fechar ao tocar no botão.
+- O carrinho deve permanecer facilmente acessível.
+- A barra de pesquisa deve ocupar quase toda a largura disponível.
+- A pesquisa pode ficar em uma segunda linha abaixo da logo.
+- Nenhum botão ou texto pode ficar cortado.
+- Os elementos devem ter tamanho adequado para toque.
+- Não utilize apenas uma versão reduzida do desktop.
+- Crie um layout realmente adaptado para dispositivos móveis.
+
+Sugestão de organização no celular:
+
+Primeira linha:
+Logo → Carrinho → Botão de menu
+
+Segunda linha:
+Barra de pesquisa ocupando toda a largura
+
+Menu:
+Abrir abaixo do cabeçalho ao tocar no botão hambúrguer.
+
+5. Duas formas de visualização
+
+Quero que o site tenha duas estruturas responsivas:
+
+- Uma visualização própria para computador.
+- Uma visualização própria para celular.
+
+O site deve identificar automaticamente o tamanho da tela e aplicar a melhor estrutura.
+
+Também quero que o layout continue funcionando corretamente caso o usuário redimensione a janela do navegador.
+
+Utilize media queries bem organizadas para separar:
+
+- Desktop
+- Tablet
+- Celular
+
+6. Responsividade
+
+Garanta funcionamento correto nas seguintes larguras:
+
+- Computadores grandes.
+- Notebooks.
+- Tablets.
+- Celulares grandes.
+- Celulares pequenos.
+
+Evite:
+
+- Elementos sobrepostos.
+- Rolagem horizontal.
+- Textos cortados.
+- Logo muito pequena.
+- Campo de pesquisa espremido.
+- Menu saindo da tela.
+
+7. Importante
+
+- Não altere os produtos.
+- Não altere o funcionamento do carrinho.
+- Não altere o contador do carrinho.
+- Não altere a pesquisa.
+- Não altere os links do menu.
+- Não altere o envio para WhatsApp.
+- Não remova nenhuma funcionalidade.
+- Faça apenas mudanças no posicionamento, tamanho, responsividade e aparência do cabeçalho.
+- Preserve toda a lógica JavaScript existente.
+- Antes de finalizar, teste o cabeçalho nas versões desktop e mobile.
+
+O resultado deve ser um cabeçalho limpo, profissional, moderno e fácil de usar tanto no computador quanto no celular.
