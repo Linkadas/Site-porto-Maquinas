@@ -100,8 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 </button>
             </div>
         </div>
-        
-        <!-- Modal Template -->
+    `;
+    
+    // Inject modal into body to avoid stacking context issues with panel-enter animation
+    const modalTemplate = `
         <div id="premium-product-modal" class="premium-modal-overlay">
             <div class="premium-modal-content">
                 <button class="premium-modal-close-btn" id="premium-modal-close">
@@ -125,6 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     `;
+    
+    // Only append if it doesn't already exist
+    if (!document.getElementById('premium-product-modal')) {
+        document.body.insertAdjacentHTML('beforeend', modalTemplate);
+    }
     
     const gridContainer = document.getElementById('premium-grid-container');
     const loadMoreBtn = document.getElementById('premium-load-more');
