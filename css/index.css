@@ -571,7 +571,7 @@ nav .nav-btn.is-active {
 }
 
 .catalog-section { padding: 80px 0; }
-.catalog-panel { background: var(--white); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-md); }
+.catalog-panel { background: var(--white); color: var(--ink); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-md); }
 .catalog-panel-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; }
 .catalog-panel-head h3 { font-size: 28px; font-weight: 800; margin: 0 0 8px; }
 .search-field { display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; }
