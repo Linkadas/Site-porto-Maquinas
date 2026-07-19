@@ -872,6 +872,10 @@ nav .nav-btn.is-active {
   background: radial-gradient(circle at 90% 10%, rgba(220, 38, 38, 0.15), transparent 40%), var(--ink-2);
   padding: 100px 0;
 }
+.contact-section .section-head h2,
+.contact-section .section-head p {
+  color: var(--white);
+}
 .contact-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start; }
 .contact-info, .contact-layout form {
   background: var(--white);

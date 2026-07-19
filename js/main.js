@@ -681,3 +681,23 @@
     }
 });
 
+
+// Page Transitions
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href]').forEach(link => {
+        // Only internal links, not hash links, no target="_blank"
+        if (link.hostname === window.location.hostname && !link.hash && link.getAttribute('target') !== '_blank' && !link.href.includes('mailto:') && !link.href.includes('tel:')) {
+            link.addEventListener('click', function(e) {
+                // Ignore if opening in new tab (ctrl/cmd click)
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+                
+                e.preventDefault();
+                const targetUrl = this.href;
+                document.body.classList.add('page-exit');
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, 300); // matches the 0.3s CSS animation
+            });
+        }
+    });
+});
