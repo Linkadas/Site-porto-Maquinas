@@ -336,7 +336,10 @@ nav .nav-btn.is-active {
    4. CONTENT SECTIONS
    ========================================================= */
 .content-section {
-  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, rgba(163,0,0,0.8) 100%);
+  background-image: linear-gradient(135deg, rgba(17,24,39,0.92) 0%, rgba(31,41,55,0.85) 50%, rgba(163,0,0,0.6) 100%), url(../products/forno-tunel.webp);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect for catalogs is nice */
   padding: 100px 0;
   color: var(--white);
 }
