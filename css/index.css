@@ -383,7 +383,7 @@ nav .nav-btn.is-active {
 
 .about-copy h2 { text-transform: none; font-size: clamp(28px, 3.5vw, 42px); }
 .about-copy > p:not(.eyebrow) {
-  color: var(--muted);
+  color: #d1d5db; /* Lighter color for dark background */
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 24px;
@@ -579,8 +579,8 @@ nav .nav-btn.is-active {
 .search-field input:focus { background: var(--white); border-color: var(--red); box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1); outline: none; }
 .catalog-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 32px; }
 .catalog-meta div { background: var(--paper); border-left: 4px solid var(--red); padding: 16px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
-.catalog-meta strong { display: block; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; font-size: 14px; }
-.catalog-meta span { color: var(--muted); font-size: 13px; }
+.catalog-meta strong { display: block; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; font-size: 14px; color: var(--ink); }
+.catalog-meta span { color: var(--steel); font-size: 13px; font-weight: 500; }
 
 /* =========================================================
    6. CARRINHO (Premium Cart Drawer)
