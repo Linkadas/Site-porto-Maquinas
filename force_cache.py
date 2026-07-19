@@ -8,12 +8,12 @@ for file in html_files:
     with open(file, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Append ?v=17 to any .css that does not already have a query parameter
-    # Example: href="./css/index.css" -> href="./css/index.css?v=17"
-    new_content = re.sub(r'\.css(["\'])', r'.css?v=17\1', content)
+    # Append ?v=18 to any .css that does not already have a query parameter
+    # Example: href="./css/index.css" -> href="./css/index.css?v=18"
+    new_content = re.sub(r'\.css(["\'])', r'.css?v=18\1', content)
     
-    # Also bump existing ?v=X to ?v=17
-    new_content = re.sub(r'\.css\?v=\d+(["\'])', r'.css?v=17\1', new_content)
+    # Also bump existing ?v=X to ?v=18
+    new_content = re.sub(r'\.css\?v=\d+(["\'])', r'.css?v=18\1', new_content)
 
     if new_content != content:
         with open(file, 'w', encoding='utf-8') as f:
