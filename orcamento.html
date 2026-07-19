@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charSet="utf-8"/>
@@ -7,6 +7,7 @@
     <meta name="description" content="Entre em contato com a Porto Máquinas pelo WhatsApp para solicitar um orçamento sob medida para o seu maquinário industrial.">
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
     <link rel="shortcut icon" href="/favicon.svg"/>
 </head>
 <body class="antialiased">
@@ -17,7 +18,7 @@
                 </a>
             <nav id="main-nav" aria-label="Navegação principal">
                 <a href="index.html" class="nav-btn">Home</a>
-                <a href="sobre.html" class="nav-btn">Sobre</a>
+
                 <a href="maquinas.html" class="nav-btn">Máquinas</a>
                 <a href="linha-acessorio-panificacao.html" class="nav-btn">Linha acessório panificação</a>
                 <a href="servicos.html" class="nav-btn">Serviços</a>
@@ -77,20 +78,104 @@
                         </div>
                         <label>Telefone <input name="telefone" type="tel" placeholder="(11) 99999-9999"/></label>
                         <label>Equipamento de interesse
-                            <select name="interesse" required>
-                                <option value="" selected>Selecione uma opção</option>
-                                <option value="Forno Túnel">Forno Túnel</option>
-                                <option value="Fornos Rotativos">Fornos Rotativos</option>
-                                <option value="Fornos Lastro">Fornos Lastro</option>
-                                <option value="Amassadeiras">Amassadeiras</option>
-                                <option value="Cilindros">Cilindros</option>
-                                <option value="Modeladoras">Modeladoras</option>
-                                <option value="Divisora Volumétrica">Divisora Volumétrica</option>
-                                <option value="Boleadeira">Boleadeira</option>
-                                <option value="Laminadora">Laminadora</option>
-                                <option value="Batedeiras">Batedeiras</option>
-                                <option value="Fatiadeiras">Fatiadeiras</option>
-                                <option value="Moinho">Moinho</option>
+                            <select name="interesse" id="interesse-select" required>
+<option value="" selected disabled>Selecione um equipamento</option>
+                                <optgroup label="Amassadeiras">
+                                    <option value="Amassadeiras">Amassadeiras</option>
+                                    <option value="Amassadeira Série APQ-F2">Amassadeira Série APQ-F2</option>
+                                    <option value="Amassadeira Série APQ">Amassadeira Série APQ</option>
+                                    <option value="Amassadeira AMX-CE">Amassadeira AMX-CE</option>
+                                    <option value="Amassadeira AMX-CF">Amassadeira AMX-CF</option>
+                                </optgroup>
+                                <optgroup label="Máquinas para Pastéis e Assados">
+                                    <option value="RPA-L / RPA-AE - Recheadora">RPA-L / RPA-AE - Recheadora</option>
+                                </optgroup>
+                                <optgroup label="Equipamentos para Queijo">
+                                    <option value="RDO-150">RDO-150</option>
+                                </optgroup>
+                                <optgroup label="Dosadoras">
+                                    <option value="Envasadora para Bags">Envasadora para Bags</option>
+                                    <option value="Dosadora com Balança Eletrônica">Dosadora com Balança Eletrônica</option>
+                                </optgroup>
+                                <optgroup label="Batedeiras">
+                                    <option value="Batedeiras">Batedeiras</option>
+                                    <option value="Batedeira Planetária">Batedeira Planetária</option>
+                                </optgroup>
+                                <optgroup label="Acessórios">
+                                    <option value="AMC-400">AMC-400</option>
+                                    <option value="AM-400">AM-400</option>
+                                </optgroup>
+                                <optgroup label="Fornos">
+                                    <option value="Forno TÃºnel">Forno TÃºnel</option>
+                                    <option value="Fornos Rotativos">Fornos Rotativos</option>
+                                    <option value="Fornos Lastro">Fornos Lastro</option>
+                                </optgroup>
+                                <optgroup label="Equipamentos Gerais">
+                                    <option value="Cilindros">Cilindros</option>
+                                    <option value="Modeladoras">Modeladoras</option>
+                                    <option value="Divisora VolumÃ©trica">Divisora VolumÃ©trica</option>
+                                    <option value="Boleadeira">Boleadeira</option>
+                                    <option value="Laminadora">Laminadora</option>
+                                    <option value="Fatiadeiras">Fatiadeiras</option>
+                                    <option value="Moinho">Moinho</option>
+                                    <option value="Multicilindros MC-S / MC-CLP">Multicilindros MC-S / MC-CLP</option>
+                                    <option value="Boleadora para Massas">Boleadora para Massas</option>
+                                </optgroup>
+                                <optgroup label="Acessórios e Movimentação">
+                                    <option value="Elevador-Virador de Cuba">Elevador-Virador de Cuba</option>
+                                </optgroup>
+                                <optgroup label="Formadoras de Pão de Queijo">
+                                    <option value="FB-600-GF">FB-600-GF</option>
+                                    <option value="FB-60-40">FB-60-40</option>
+                                    <option value="FB-500-E">FB-500-E</option>
+                                    <option value="FB-500-L">FB-500-L</option>
+                                    <option value="FB-200-A">FB-200-A</option>
+                                    <option value="FB-200-Baby">FB-200-Baby</option>
+                                </optgroup>
+                                <optgroup label="Empanadeiras">
+                                    <option value="EDC-1000">EDC-1000</option>
+                                </optgroup>
+                                <optgroup label="Acessórios e Carrinhos">
+                                    <option value="Carrinho para Bandejas">Carrinho para Bandejas</option>
+                                </optgroup>
+                                <optgroup label="Linhas de Produção">
+                                    <option value="Lynea Supra">Lynea Supra</option>
+                                    <option value="Lynea-BB">Lynea-BB</option>
+                                    <option value="LB-700-C">LB-700-C</option>
+                                </optgroup>
+                                <optgroup label="Máquinas para Pizza">
+                                    <option value="Série LPZ">Série LPZ</option>
+                                    <option value="Série CPZ">Série CPZ</option>
+                                </optgroup>
+                                <optgroup label="Linha Acessório Panificação">
+                                    <option value="Armário inox com portas">Armário inox com portas</option>
+                                    <option value="Armário alto ventilado">Armário alto ventilado</option>
+                                    <option value="Carro esqueleto">Carro esqueleto</option>
+                                    <option value="Assadeira lisa">Assadeira lisa</option>
+                                    <option value="Assadeira perfurada">Assadeira perfurada</option>
+                                    <option value="Forma com canais">Forma com canais</option>
+                                    <option value="Mesa inox com prateleira">Mesa inox com prateleira</option>
+                                    <option value="Mesa inox reforçada">Mesa inox reforçada</option>
+                                    <option value="Mesa com cuba">Mesa com cuba</option>
+                                    <option value="Mesa com duas cubas">Mesa com duas cubas</option>
+                                    <option value="Balcão inox fechado">Balcão inox fechado</option>
+                                    <option value="Balcão de atendimento">Balcão de atendimento</option>
+                                    <option value="Gaveteiro inox">Gaveteiro inox</option>
+                                    <option value="Carro de transporte">Carro de transporte</option>
+                                    <option value="Tanque móvel">Tanque móvel</option>
+                                    <option value="Lixeira inox com rodas">Lixeira inox com rodas</option>
+                                    <option value="Estante inox">Estante inox</option>
+                                    <option value="Estante para bandejas">Estante para bandejas</option>
+                                    <option value="Cuba de apoio">Cuba de apoio</option>
+                                    <option value="Escorredor inox">Escorredor inox</option>
+                                    <option value="Refrigerador horizontal">Refrigerador horizontal</option>
+                                    <option value="Freezer horizontal">Freezer horizontal</option>
+                                    <option value="Freezer vertical">Freezer vertical</option>
+                                    <option value="Vitrine refrigerada">Vitrine refrigerada</option>
+                                    <option value="Buffet expositor">Buffet expositor</option>
+                                    <option value="Estrado plástico">Estrado plástico</option>
+                                    <option value="Prateleira multiuso">Prateleira multiuso</option>
+                                </optgroup>
                             </select>
                         </label>
                         <label>Mensagem
@@ -110,6 +195,8 @@
             <p>© 2026 Porto Máquinas Equipamentos. Conteúdo baseado no catálogo SUPREMAX.</p>
         </div>
     </footer>    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./js/orcamento.js"></script>
 </body>
 </html>
 
