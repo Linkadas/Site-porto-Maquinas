@@ -1,60 +1,70 @@
-# Site Porto Máquinas
+<div align="center">
+  <img src="./assets/porto-maquinas-logo.webp" alt="Porto Máquinas Logo" width="250"/>
+  
+  # Porto Máquinas | Equipamentos Industriais
+  
+  **Catálogo premium e imersivo de equipamentos para panificação, biscoitos e pizzas.**
 
-Este é o repositório do site da **Porto Máquinas**.
+  [![Status](https://img.shields.io/badge/Status-Ativo-success?style=for-the-badge&color=DC2626)](#)
+  [![Design](https://img.shields.io/badge/UI/UX-Dark_Glassmorphism-black?style=for-the-badge)](#)
+  [![Stack](https://img.shields.io/badge/Stack-HTML_|_CSS_|_JS-blue?style=for-the-badge&color=111827)](#)
+</div>
 
-## Estrutura do Projeto
+---
 
-O código-fonte principal do site está contido na pasta `/SITE PORTO MAQUINAS`, que possui a seguinte estrutura de arquivos:
+## 💎 Sobre o Projeto
 
-* `index.html` - Página principal do site.
-* `produtos.html` - Catálogo de produtos.
-* `servicos.html` - Descrição de serviços.
-* `sobre.html` - Página institucional.
-* `orcamento.html` - Formulário ou página de contato/orçamento.
-* `/css` - Arquivos de estilos CSS.
-* `/js` - Scripts Javascript.
-* `/assets`, `/catalog`, `/products`, `/services` - Pastas com imagens e recursos do site.
+O site da **Porto Máquinas** foi redesenhado para entregar uma experiência premium, imersiva e de alto padrão. Utilizando técnicas modernas de web design como **Glassmorphism**, fundos dinâmicos escuros (dark theme) e animações suaves, o catálogo destaca a robustez e a qualidade dos equipamentos industriais oferecidos.
 
-## Como Contribuir (Fluxo de Trabalho Git)
+### ✨ Destaques Visuais
+* **Fundo Unificado:** Um degradê escuro e sofisticado mesclado com texturas de equipamentos que cobre toda a experiência de navegação sem quebras ou travamentos.
+* **Glassmorphism:** Painéis de catálogo e menus translúcidos que proporcionam profundidade e um toque moderno.
+* **Micro-interações:** Animações fluidas de entrada, transições suaves entre abas e efeitos hover refinados.
 
-### 1. Clonar o Repositório
-No computador do colaborador:
-```bash
-git clone https://github.com/Linkadas/site-porto-maquinas.git
+---
+
+## 🛠️ Funcionalidades
+
+- **Catálogo Inteligente:** Navegação rápida entre Máquinas, Acessórios e Serviços.
+- **Carrinho de Orçamentos:** Um sistema de cotação corporativo. Adicione produtos ao "carrinho" para solicitar um orçamento customizado, com persistência local (`localStorage`) para não perder os itens.
+- **Pesquisa Integrada:** Encontre rapidamente amassadeiras, fornos, modeladoras, entre outros.
+- **Totalmente Responsivo:** Desenhado para funcionar com perfeição em desktops, tablets e smartphones.
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+/
+├── index.html                        # Página Inicial (Home)
+├── maquinas.html                     # Catálogo de Máquinas
+├── linha-acessorio-panificacao.html  # Catálogo de Acessórios
+├── servicos.html                     # Página de Serviços
+├── orcamento.html                    # Formulário de Orçamento / Checkout
+├── css/                              # Estilos (index.css, colors.css, animations.css)
+├── js/                               # Scripts principais (main.js, utils)
+└── assets/                           # Imagens, logos e ícones
 ```
 
-### 2. Criar uma Branch de Trabalho
-Evite trabalhar direto na branch `main`. Crie uma branch própria para as suas alterações:
-```bash
-# Para criar e mudar para a sua branch:
-git checkout -b <nome-da-sua-branch>
-```
+---
 
-### 3. Enviar Alterações
-Após fazer as alterações:
-```bash
-git add .
-git commit -m "Descrição clara da sua alteração"
-git push -u origin <nome-da-sua-branch>
+## 🚀 Como Executar Localmente
 
-## Como Testar Localmente
+Você não precisa de ferramentas complexas para rodar este site. Basta um servidor web local simples:
 
-Para rodar o site no seu navegador com todas as funcionalidades (como imagens, fontes e persistência do localStorage) funcionando sem problemas de permissão local, inicie o servidor interno do Python na raiz do projeto:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Linkadas/Site-porto-Maquinas.git
+   ```
+2. Inicie um servidor local (exemplo com Python):
+   ```bash
+   cd Site-porto-Maquinas
+   python3 -m http.server 8080
+   ```
+3. Abra seu navegador em `http://localhost:8080`.
 
-```bash
-# Iniciar o servidor local na porta 8080
-python -m http.server 8080 --directory "SITE PORTO MAQUINAS"
-```
+---
 
-Depois, acesse no seu navegador: **[http://localhost:8080](http://localhost:8080)**.
-
-## Funcionalidades Adicionadas
-
-### Carrinho de Compras (Solicitação de Orçamento Sem Exibição de Valores)
-Adicionada uma gaveta lateral interativa de carrinho de compras que facilita a simulação de pedidos de orçamento:
-- **Botões "Adicionar ao carrinho":** Disponíveis em todos os cards nas páginas de **Produtos** e **Acessórios**.
-- **Foco em Vendas Corporativas (Sem Exibição de Valores):** O carrinho não mostra preços nem totais de forma visível ao cliente, operando estritamente como uma lista de intenção de orçamento para que a equipe comercial faça a cotação posterior.
-- **Persistência local:** Armazenamento automático no `localStorage`, mantendo os itens do carrinho intactos mesmo ao mudar de página ou recarregar o navegador.
-- **Controles de quantidade:** Botões para adicionar ou diminuir quantidades diretamente na barra lateral.
-- **Finalização de Pedido:** Simulação de conclusão de orçamento com um modal de feedback moderno e limpeza automática do carrinho.
-
+<div align="center">
+  <p>Desenvolvido com excelência para <strong>Porto Máquinas</strong>.</p>
+</div>
