@@ -346,8 +346,9 @@ nav .nav-btn.is-active {
 
 .representantes-band {
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  right: max(40px, calc(50vw - 600px));
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
