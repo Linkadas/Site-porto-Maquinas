@@ -54,16 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Filter functions
     const categoryMapping = {
         'todas': () => true,
-        'amassadeiras': (cat, name) => cat.toLowerCase().includes('amassadeira'),
-        'formadoras': (cat, name) => cat.toLowerCase().includes('formadora') || cat.toLowerCase().includes('empanadeira') || name.toLowerCase().includes('modeladora'),
-        'linhas de produção': (cat, name) => cat.toLowerCase().includes('linhas de produção') || cat.toLowerCase().includes('linha de produção'),
-        'pizza': (cat, name) => cat.toLowerCase().includes('pizza'),
-        'pastéis': (cat, name) => cat.toLowerCase().includes('pastéis') || cat.toLowerCase().includes('pastel') || cat.toLowerCase().includes('assados'),
-        'dosadoras': (cat, name) => cat.toLowerCase().includes('dosadora'),
-        'envasadoras': (cat, name) => cat.toLowerCase().includes('envasadora') || name.toLowerCase().includes('envasadora'),
-        'equipamentos para queijo': (cat, name) => cat.toLowerCase().includes('queijo'),
-        'batedeiras': (cat, name) => cat.toLowerCase().includes('batedeira'),
-        'acessórios': (cat, name) => cat.toLowerCase().includes('acessórios') || cat.toLowerCase().includes('movimentação') || cat.toLowerCase().includes('carrinhos')
+        'supremax': (cat, name, specs) => cat.toLowerCase().includes('supremax') || name.toLowerCase().includes('supremax') || (specs && specs.toLowerCase().includes('supremax')),
+        'panitech': (cat, name, specs) => cat.toLowerCase().includes('panitech') || name.toLowerCase().includes('panitech') || (specs && specs.toLowerCase().includes('panitech')),
+        'mcgfrio': (cat, name, specs) => cat.toLowerCase().includes('mcgfrio') || name.toLowerCase().includes('mcgfrio') || (specs && specs.toLowerCase().includes('mcgfrio'))
     };
 
     // Make products globally available for modal
@@ -78,16 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="premium-category-filters" id="premium-filter-buttons">
                     <button class="premium-filter-btn active" data-filter="todas">Todas</button>
-                    <button class="premium-filter-btn" data-filter="amassadeiras">Amassadeiras</button>
-                    <button class="premium-filter-btn" data-filter="formadoras">Formadoras</button>
-                    <button class="premium-filter-btn" data-filter="linhas de produção">Linhas de Produção</button>
-                    <button class="premium-filter-btn" data-filter="pizza">Pizza</button>
-                    <button class="premium-filter-btn" data-filter="pastéis">Pastéis</button>
-                    <button class="premium-filter-btn" data-filter="dosadoras">Dosadoras</button>
-                    <button class="premium-filter-btn" data-filter="envasadoras">Envasadoras</button>
-                    <button class="premium-filter-btn" data-filter="equipamentos para queijo">Equipamentos para Queijo</button>
-                    <button class="premium-filter-btn" data-filter="batedeiras">Batedeiras</button>
-                    <button class="premium-filter-btn" data-filter="acessórios">Acessórios</button>
+                    <button class="premium-filter-btn" data-filter="supremax">Supremax</button>
+                    <button class="premium-filter-btn" data-filter="panitech">Panitech</button>
+                    <button class="premium-filter-btn" data-filter="mcgfrio">MCGfrio</button>
                 </div>
             </div>
             
@@ -146,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Apply category filter
             let passesFilter = true;
             if (currentFilter !== 'todas' && categoryMapping[currentFilter]) {
-                passesFilter = categoryMapping[currentFilter](p.category, p.name);
+                passesFilter = categoryMapping[currentFilter](p.category, p.name, p.specsHTML + " " + p.shortDescription);
             }
             
             // Apply search
