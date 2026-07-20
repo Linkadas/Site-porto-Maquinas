@@ -362,10 +362,9 @@ nav .nav-btn.is-active {
 }
 .representantes-band .rep-logos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 32px;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
 }
 .representantes-band .rep-logos strong {
   font-size: 20px;
