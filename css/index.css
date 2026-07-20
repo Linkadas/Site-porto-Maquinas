@@ -350,6 +350,7 @@ nav .nav-btn.is-active {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 16px;
 }
 .representantes-band .rep-title {
@@ -362,6 +363,7 @@ nav .nav-btn.is-active {
 .representantes-band .rep-logos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 32px;
   align-items: center;
 }
