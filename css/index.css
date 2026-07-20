@@ -344,6 +344,40 @@ nav .nav-btn.is-active {
 }
 .actions { display: flex; flex-wrap: wrap; gap: 16px; }
 
+.representantes-band {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.representantes-band .rep-title {
+  color: var(--muted);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.representantes-band .rep-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+.representantes-band .rep-logos strong {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  transition: var(--transition);
+  cursor: default;
+}
+.representantes-band .rep-logos strong:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 /* =========================================================
    4. CONTENT SECTIONS
    ========================================================= */
